@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>JavaScript Lab</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>JavaScript Lab</p>
+    <script>
+      //JavaScript command
+      console.log("log from JS");
+      document.write("text from JS ");
+
+      let name = "CIS";
+      name = 2000;
+      var university = "KKU";
+      let currentYear = 2021;
+      let currentyear = 2020;
+      document.write(name + " " + university + currentYear + currentyear);
+      //constante ค่าคงที่
+      const pi = 3.14;
+      const g = 9.8;
+
+      //short if
+      let x = currentYear > 2021 ? "Future" : "Past";
+      //var let const
+      if (true) {
+        let a = 1;
+        var b = 2;
+        const c = 3;
+        console.log(a, b, c);
+      }
+      //console.log(a); // is not defined
+      //console.log(b);
+      //console.log(c); // is not defined
+
+      functionName(); // call function
+      function functionName() {
+        console.log("call from function");
+      }
+
+      sayMyName("CIS"); // call function and sent data to function
+      function sayMyName(name) {
+        console.log("Hello " + name);
+      }
+
+      let result = plusnumber(20, 23);
+      function plusnumber(num1, num2) {
+        return num1 + num2;
+      }
+
+      let f = c2f(100);
+      console.log(f + "'F");
+      function c2f(celsius) {
+        //T(°F) = T(°C) × 9/5 + 32
+        let f = celsius * (9 / 5) + 32;
+        return f;
+      }
+
+      function f2c(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      let person = {
+        name: "Mickey",
+        year: 51,
+      };
+      console.log(person.name);
+
+      let color = ["red", "blue", "green"];
+      console.log(color[0]);
+      for (let i = 0; i < color.length; i++) {
+        console.log(color[i]);
+      }
+      for (let c of color) {
+        console.log(c);
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
